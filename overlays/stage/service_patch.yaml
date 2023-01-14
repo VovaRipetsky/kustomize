@@ -9,4 +9,4 @@ spec:
     - name: sbdemo
       port: 8080
       $patch: delete  
-  type: ClusterIP
+  type: NodePort

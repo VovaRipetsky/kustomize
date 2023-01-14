@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sbdemo
+  namespace: default
   labels:
     app: sbdemo
 spec:
@@ -17,7 +18,8 @@ spec:
         - name: sbdemo
           image: jingfang/sbdemo
           ports:
-            - containerPort: 8080
+            - name: sbdemo
+              containerPort: 8080
           volumeMounts:
             - name: demo-config
               mountPath: /config

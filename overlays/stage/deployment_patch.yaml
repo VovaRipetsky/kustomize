@@ -16,4 +16,4 @@ spec:
 
           env:
           - name: spring.profiles.active
-            value: prod
+            value: stage
