@@ -3,6 +3,7 @@ resources:
 patchesStrategicMerge:
 - deployment_patch.yaml
 - service_patch.yaml
+- configmap_patch.yaml
 namePrefix: production-
 commonLabels:
   app: prod
