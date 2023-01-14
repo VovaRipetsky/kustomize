@@ -7,6 +7,9 @@ spec:
     spec:
       containers:
         - name: sbdemo
+          image: nginx:latest
+          ports:
+            - containerPort: 80
           env:
           - name: spring.profiles.active
             value: prod
