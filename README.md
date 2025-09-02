@@ -61,7 +61,9 @@ The deployments use a custom helper image:
 artifactory.iponweb.net/it-docker-local/ci/gitlab-slaves/it_k8s:x.x.x
 
 ```docker build -t it_k8s:0.1.5 .```
+
 ```docker tag it_k8s:0.1.5 artifactory.iponweb.net/it-docker-local/ci/gitlab-slaves/it_k8s:0.1.5```
+
 ```docker push artifactory.iponweb.net/it-docker-local/ci/gitlab-slaves/it_k8s:0.1.5```
 
 ### Dockerifle Tools
